@@ -46,6 +46,8 @@ std::string IMAGE0_TOPIC, IMAGE1_TOPIC;
 std::string FISHEYE_MASK;
 std::vector<std::string> CAM_NAMES;
 int MAX_CNT;
+float MATCH_RATIO;
+float EPIPOLAR_TOLERANCE;
 int MIN_DIST;
 double F_THRESHOLD;
 int SHOW_TRACK;
@@ -91,6 +93,8 @@ void readParameters(std::string config_file)
     F_THRESHOLD = fsSettings["F_threshold"];
     SHOW_TRACK = fsSettings["show_track"];
     FLOW_BACK = fsSettings["flow_back"];
+    MATCH_RATIO = fsSettings["match_ratio"];
+    EPIPOLAR_TOLERANCE = fsSettings["epipolar_tolerance"];
 
     MULTIPLE_THREAD = fsSettings["multiple_thread"];
 

@@ -16,7 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
     )
 
 #find_package(OpenCV)
-include(/home/dji/opencv/build/OpenCVConfig.cmake)
+include(/home/nvidia/opencv/build/OpenCVConfig.cmake)
 
 
 find_package(Ceres REQUIRED)

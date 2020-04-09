@@ -68,7 +68,8 @@ extern int MIN_DIST;
 extern double F_THRESHOLD;
 extern int SHOW_TRACK;
 extern int FLOW_BACK;
-
+extern float EPIPOLAR_TOLERANCE;
+extern float MATCH_RATIO;
 void readParameters(std::string config_file);
 
 enum SIZE_PARAMETERIZATION
